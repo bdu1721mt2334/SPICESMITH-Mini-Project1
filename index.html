@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spicesmith</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #fdf8f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #8c4a2f;
+            padding: 1rem 2rem;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        footer {
+            background-color: #8c4a2f;
+            padding: 1rem 2rem;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 2rem;
+        }
+
+        .hero {
+            text-align: center;
+            position: relative;
+        }
+
+        .hero img {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 16px;
+        }
+
+        .welcome {
+            background-image: url(images/big.jpg);
+            background-size: cover;
+            display: flex;
+            flex-direction: row;
+            height: 50vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .heroname {
+            text-wrap: wrap;
+            width: 40vw;
+            font-size: xxx-large;
+            color: ghostwhite;
+            font-family: serif;
+        }
+
+        h2{
+            text-align: center;
+        }
+        .about,
+        .products,
+        .contact,
+        .buying {
+            max-width: 900px;
+            margin: 2rem auto;
+            text-align: center;
+        }
+
+        /* Product Grid Styling */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* responsive layout */
+            gap: 1.5rem;
+        }
+
+        /* Each product card container */
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .product-card img {
+            width: 100%; /* Ensure the image fits within its container */
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .btn {
+            background-color: #8c4a2f;
+            padding: 8px;
+            border-radius: 5px;
+            color: white;
+            border: none;
+            margin-top: 250px;
+            position:absolute;
+            cursor: pointer;
+
+
+        }
+
+        @media (max-width: 768px) {
+    header, footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 1rem;
+    }
+
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .welcome {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .heroname {
+        width: 100%;
+        font-size: x-large;
+        padding: 1rem;
+    }
+
+    .btn {
+        position: static;
+        margin-top: 1rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card {
+        padding: 1rem;
+    }
+
+    .hero img {
+        max-height: 300px;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h3>SPICESMITH</h3>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+            <a href="#buying">Buying Options</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="welcome">
+            <h2 class="heroname">PREMIUM SPICES FOR DISCERNING TASTES</h2>
+            <button class="btn">Shop Now</button>
+        </div>
+        <h1>Welcome to Spicesmith</h1>
+        <p>Experience purity, flavor, and authenticity in every spice we craft.</p>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p> Spicesmith is a premium spice venture dedicated to delivering authentic, high-quality Indian spices to homes and businesses around the world. Our mission is to bring the rich flavors and traditions of Indian cuisine to every kitchen by offering pure, ethically sourced, and expertly blended spices. Whether it's turmeric, chili, garam masala, or specialty blends, Spicesmith combines age-old wisdom with modern quality standards. With a strong focus on freshness, sustainability, and customer satisfaction, we aim to be the go-to brand for spice lovers and culinary enthusiasts. Spicesmith is dedicated to bringing you premium-quality, ethically sourced spices. From farm to table, our journey is rooted in tradition, purity, and excellence.</p>
+    </section>
+
+    <section class="products" id="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="./images/black.png" alt="Black Pepper">
+                <h3>Black Pepper</h3>
+            </div>
+            <div class="product-card">
+                <img src="./images/coriander.webp" alt="Coriander">
+                <h3>Coriander</h3>
+            </div>
+            <div class="product-card">
+                <img src="./images/redpaprika.webp" alt="Red Paprika">
+                <h3>Red Paprika</h3>
+            </div>
+            <div class="product-card">
+                <img src="./images/turmeric.jpg" alt="Turmeric">
+                <h3>Turmeric</h3>
+            </div>
+
+            <div class="product-card">
+                <img src="images/cinnamon.jpg" alt="cinnamon">
+                <h3>cinnamon</h3>
+            </div>
+
+            <div class="product-card">
+                <img src="./images/star.webp" alt="star anise">
+                <h3>Star anise</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@spicesmith.in</p>
+        <p>Phone: ‪+91 98765 43210‬</p>
+        <p>Address: 45 Spice Market Road, Chennai, Tamil Nadu, India</p>
+        
+    </section>
+
+    <section class="buying" id="buying">
+        <h2>Buying Options</h2>
+        <p>Available on major e-commerce platforms and soon on our own store. Subscribe for updates!</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Spicesmith. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
